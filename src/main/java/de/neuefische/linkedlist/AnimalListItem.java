@@ -3,18 +3,18 @@ package de.neuefische.linkedlist;
 import java.util.Objects;
 
 public class AnimalListItem {
-    private Anmial value;
+    private Animal value;
     private AnimalListItem next;
 
-    public AnimalListItem(Anmial value) {
+    public AnimalListItem(Animal value) {
         this.value = value;
     }
 
-    public Anmial getValue() {
+    public Animal getValue() {
         return value;
     }
 
-    public void setValue(Anmial value) {
+    public void setValue(Animal value) {
         this.value = value;
     }
 
