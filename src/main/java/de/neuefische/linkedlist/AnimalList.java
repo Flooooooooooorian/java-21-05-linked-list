@@ -43,7 +43,7 @@ public class AnimalList {
     @Override
     public String toString() {
         if (head == null) {
-            return "List ist leer!";
+            return "List is empty!";
         }
 
         StringBuilder builder = new StringBuilder(head.toString());
