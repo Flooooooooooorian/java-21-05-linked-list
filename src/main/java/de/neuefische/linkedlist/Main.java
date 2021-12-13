@@ -14,5 +14,13 @@ public class Main {
         list.add(new Animal("Katze"));
 
         System.out.println(list);
+
+        list.add(new Animal("Katze"));
+
+        System.out.println(list);
+
+        list.remove(new Animal("Katze"));
+
+        System.out.println(list);
     }
 }

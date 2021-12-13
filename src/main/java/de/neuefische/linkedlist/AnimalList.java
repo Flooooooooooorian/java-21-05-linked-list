@@ -19,6 +19,27 @@ public class AnimalList {
         }
     }
 
+    public void remove(Animal animal) {
+        while(head != null && head.getValue().equals(animal)) {
+            head = head.getNext();
+        }
+
+        if ( head == null) {
+            return;
+        }
+
+        AnimalListItem current = head;
+
+        while (current.getNext() != null) {
+            if (current.getNext().getValue().equals(animal)) {
+                current.setNext(current.getNext().getNext());
+            }
+            else {
+                current = current.getNext();
+            }
+        }
+    }
+
     @Override
     public String toString() {
         if (head == null) {
