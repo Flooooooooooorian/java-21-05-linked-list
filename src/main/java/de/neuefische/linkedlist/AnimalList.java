@@ -19,5 +19,21 @@ public class AnimalList {
         }
     }
 
+    @Override
+    public String toString() {
+        if (head == null) {
+            return "List ist leer!";
+        }
 
+        StringBuilder builder = new StringBuilder(head.toString());
+
+        AnimalListItem current = head.getNext();
+
+        while (current != null) {
+            builder.append(" -> ").append(current);
+            current = current.getNext();
+        }
+
+        return builder.toString();
+    }
 }
